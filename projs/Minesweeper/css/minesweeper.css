@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(163, 119, 119);
+    color:white;
+}
+  
+body header {
+    text-align: center;
+}
+
+.header3 {
+    text-align: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.board-container {
+    text-align: center;
+    vertical-align: center;
+}
+
+.board-wrapper {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    background-color: rgb(212, 112, 112);
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.board td {
+    border: 2px solid black;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    transition: .5s;
+    color: black;
+    box-shadow: 2px 2px grey;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hide {
+    background-color: rgb(236, 167, 167);
+    cursor: pointer;
+    /* text-indent: -100%; */
+    overflow: hidden;
+}
+
+.hide:hover {
+    background-color: lightsalmon;
+}
+
+.btn {
+    width: 50px;
+    border: 2px solid lightcoral;
+    height: 40px;
+    font-size: 15px;
+    background-color: burlywood;
+    background-image: 😊;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px lightblue;
+}
+
+.hints {
+    width: 100px;
+    border: 2px solid lightcoral;
+    height: 40px;
+    font-size: 15px;
+    background-color: burlywood;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.hints:hover {
+    box-shadow: 1px 1px lightblue;
+}
+
+.bombs {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.difficulty {
+    width: 100px;
+    border: 2px solid lightcoral;
+    height: 40px;
+    font-size: 15px;
+    background-color: burlywood;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.difficulty:hover {
+    box-shadow: 1px 1px lightblue;
+}
+
+.sidebar-wrapper {
+    background-color: cadetblue;
+    border-radius: 25px;
+    font-size: 13px;
+    width: 200px;
+    height: 265px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}

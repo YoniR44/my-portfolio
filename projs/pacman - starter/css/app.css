@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(163, 119, 119);
+  color:white;
+}
+
+body header {
+  text-align: center;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+}
+
+.modal {
+  background-color: lightseagreen;
+  display:none;
+  text-align: center;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 15%;
+  right: 10px;
+  padding: 5px;
+  width: 200px;
+  left: 50%;
+  top: 50%; 
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.xButton {
+  float:right;
+  margin-right: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.btn {
+  background: #3498db;
+   width: 150px;
+  padding: 4px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}

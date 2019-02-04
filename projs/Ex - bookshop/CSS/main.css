@@ -1,0 +1,71 @@
+@import url(../lib/bs4/css/bootstrap.min.css);
+
+body {
+    text-align: center;
+    background-color: lightcyan;
+    margin: 10px;
+}
+
+.book-img {
+    width: 50px;
+    height: 60px;
+}
+
+.modal-header {
+    display: inline-block;
+    background-color: lightgreen;
+}
+
+.modal-body {
+    background-color: lightpink;
+}
+.modal-footer {
+    display: inline-block;
+    background-color: lightblue;
+}
+
+.close {
+    line-height: 0;
+}
+
+.title-sort {
+    cursor: pointer;
+}
+
+input {
+    width: 60px;
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+.newBook-modal {
+    display: none;
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-body2 {
+    margin-top: 25px;
+}
+
+label {
+    width: 180px;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+}
