@@ -6,7 +6,7 @@ p {
     line-height: 1.75;
 }
 a {
-    color: #fed136;
+    /* color: #fed136; */
 }
 a.active,
 a:active,
@@ -85,7 +85,7 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: cyan;
+    background: rgb(75, 148, 148);
     width: 80vw;
     left: -80vw;
     transition: all 0.3s ease;
@@ -343,6 +343,7 @@ header.masthead .intro-text .intro-heading {
 }
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
+    height: unset;
 }
 .portfolio-modal .modal-content button {
     cursor: pointer;
@@ -764,4 +765,22 @@ fieldset[disabled] .btn-xl:hover {
 
 .button {
     margin-top: 10px;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.button:hover {
+    box-shadow: 1px 2px rgb(49, 31, 31);
+}
+
+.img-fluid {
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+}
+
+textarea:focus, input:focus {
+    border: 2px solid black;
 }

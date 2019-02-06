@@ -26,10 +26,24 @@ function renderProjs() {
     $(`.row-project-portfolio`).html(strHTML);
 }
 
+function renderProjModal(projId) {
+  var proj = getProjById(projId);
+  var $modal = $('.modal');
+  $modal.find('h2').text(proj.name);
+  $modal.find('.item-intro').text(proj.title);
+  $modal.find('.img-fluid').attr('src', proj.imgUrl);
+  
+  var x = $modal.find('.proj-link').attr('href', proj.link);
+  console.log(x);
+  
+  $modal.find('p').text(proj.desc);
+  $modal.find('li').text(proj.publishedAt);
+}
+
 function onSubmit() {
     var mail = $('input#e-mail').val();
     var subject = $('input#subject').val();
-    var content = $('input#message-body').val();
+    var content = $('textarea#message-body').val();
 
     var url = `https://mail.google.com/mail/?view=cm&fs=1&to=${mail}&su=${subject}&body=${content}&bcc=someone.else@example.com`;
 

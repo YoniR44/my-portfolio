@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bookshop</title>
+</head>
+
+<body onload="init()">
+    <div class="bookshop-container">
+        <div class="container">
+            <h1 data-trans="title" style="margin: 15px">Welcome to my bookshop!</h1>
+            <button data-trans="new-book-btn" type="button" class="btn btn-primary" onclick="readAndAddNewBook()">Create
+                new book</button>
+
+            <select onchange="onSetLang(this.value)">
+                <option value="en">English</option>
+                <option value="he">עברית</option>
+            </select>
+
+            <div class="newBook-modal">
+                <div class="header">
+                    <h5 data-trans="new-book-modal">Enter new book details</h5>
+                </div>
+                <div class="modal-body2">
+                    <div>
+                        <label data-trans="new-book-title" for="">Book title: </label>
+                        <input id="title-input" type="text">
+                    </div>
+                    <div>
+                        <label data-trans="new-book-price" for="">Book Price: </label>
+                        <input id="price-input" type="text">
+                    </div>
+                    <div>
+                        <label data-trans="new-book-image" for="">Book image: </label>
+                        <input id="image-input" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <section class="books-container"></section>
+            <button data-trans="prev-page" class="btn btn-info" onclick="onPrevPage()">Previous page</button>
+            <button data-trans="next-page" class="btn btn-info" onclick="onNextPage()">Next page</button>
+
+            <img src="" alt="">
+            <div class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button onclick="onCloseModal()" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img class="book-img">
+                            <h5 data-trans="modal-title" class="modal-title">Modal title</h5>
+                            <h6 class="book-id"></h6>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                            <div class="rate">
+                                <button class="btn" onclick="updateRating(-1)">-</button>
+                                <span data-trans="book-rating"> <b> Book rating: </b></span>
+                                <span class="rate-up"></span>
+                                <button class="btn" onclick="updateRating(1)">+</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button data-trans="close-modal" type="button" class="btn btn-secondary" data-dismiss="modal"
+                                onclick="onCloseModal()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/bookshop-util.js"></script>
+    <script src="js/bookshop-main.js"></script>
+    <script src="JS/book-service.js"></script>
+
+</body>
+
+</html>
