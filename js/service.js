@@ -29,7 +29,7 @@ function createProjects() {
     'projs/touch-nums/touchNums.html'));
     gProjs.push(createProject('proj-trivia', 'Trivia Game', 'Can you get all the answers right?',
     'Short trivia game for the kids describe what you see in the picture and try to get them all right!',
-    'January 17th, 2019', 'img/portfolio/05-full.jpg', 'Game', 'projs/in-picture/in-picture.html'));
+    'January 17th, 2019', 'img/portfolio/05-full.jpg', 'Game', 'projs/in-picture/inPicture.html'));
     gProjs.push(createProject('proj-pacman', 'Pacman', 'Basic Pacman game',
     'Pacman game - eat the cookies, avoid the ghosts, Pizza gives you the power to get the ghosts, cherries give you bonus points', 
     'Jan 22nd, 2019', 'img/portfolio/06-full.jpg', 'Game', 'projs/pacman - starter/index.html'));
