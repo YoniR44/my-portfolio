@@ -6,6 +6,7 @@ body {
     background-image: url("img/nature.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .bookshop-container {
@@ -24,7 +25,7 @@ body {
     -moz-box-shadow: 10px 13px 87px 1px rgba(0,0,0,0.75);
     box-shadow: 10px 13px 87px 1px rgba(0,0,0,0.75);
     transition: 0.5s;
-
+    margin: 10px;
 }
 
 .container:hover {
@@ -63,6 +64,10 @@ body {
     cursor: pointer;
 }
 
+select {
+    cursor: pointer;
+}
+
 input {
     width: 60px;
     position: absolute;
@@ -75,14 +80,17 @@ input {
 .newBook-modal {
     display: none;
     width: 300px;
-    height: 200px;
-    background-color: grey;
+    height: fit-content;
+    background-color: rgb(125, 177, 96);
     border: 2px solid black;
-    position: absolute;
+    position: fixed;
     left: 50%;
     margin-left: -150px;
     border-radius: 15px;
     text-align: start;
+    -webkit-box-shadow: 10px 11px 46px -1px rgba(59,58,59,0.81);
+    -moz-box-shadow: 10px 11px 46px -1px rgba(59,58,59,0.81);
+    box-shadow: 10px 11px 46px -1px rgba(59,58,59,0.81);
 }
 
 .header {
@@ -92,6 +100,11 @@ input {
 
 .modal-body2 {
     margin-top: 25px;
+}
+
+.modal2-footer {
+    text-align: center;
+    margin: 5px;
 }
 
 label {
@@ -104,4 +117,49 @@ label {
 
 .rtl {
     direction: rtl;
+}
+
+.btn {
+    margin-bottom: 0.25rem;
+}
+
+h6 {
+    margin-bottom: 0rem;
+}
+
+@media only screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) {
+     .bookshop-container {
+        height: unset;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        position: absolute; 
+        top: -9999px;
+        left: -9999px;
+    }
+    tr { border: 3px solid #ccc;}
+    td { 
+        border: none;
+        border-bottom: 0px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    input {
+        left: 50%;
+        margin-left: -30px;
+    }
+    .newBook-modal {
+        z-index: 10;
+    }    
 }

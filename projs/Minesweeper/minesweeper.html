@@ -3,44 +3,47 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minesweeper</title>
     <link rel="stylesheet" href="css/minesweeper.css" />
 </head>
 
 <body onload="init(4, 2);">
-    <header>
-        <h1>MINESWEEPER GAME!</h1>
-    </header>
-    
-    <div class="board-container">
-        <h3 class="header3">
-            <div class="bombs">Bombs left: <span>0</span></div>
-            <select class="difficulty" onchange="selectDifficulty()">
-                <option value="1">Easy</option>
-                <option value="2">Medium</option>
-                <option value="3">Hard</option>
-            </select>
-            <button onclick="init(gSize, gBombAmount)" class="btn"></button>            
-            <button onclick="getHint()" class="hints">Hints: <span>3</span></button>
-        </h3>
+    <div class="game-container">
+        <header>
+            <h1>MINESWEEPER GAME!</h1>
+        </header>
 
-        <div class="sidebar-wrapper">
-            <h1>Top scores are: </h1>
-            <h2>Easy: <span style="color:blue"> </span></h2>
-            <h2>Medium: <span style="color:red"> </span></h2>
-            <h2>Hard: <span style="color:green"> </span></h2>
-            <div class="timer">
-                <h1>Time: </h1>
-                <h2><span style="color:blue">0</span> seconds</h2>
+        <div class="board-container">
+            <h3 class="header3">
+                <div class="bombs">Bombs left: <span>0</span></div>
+                <select class="difficulty" onchange="selectDifficulty()">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                </select>
+                <button onclick="init(gSize, gBombAmount)" class="btn"></button>
+                <button onclick="getHint()" class="hints">Hints: <span>3</span></button>
+            </h3>
+
+            <div class="sidebar-wrapper">
+                <h1>Top scores are: </h1>
+                <h2>Easy: <span style="color:blue"> </span></h2>
+                <h2>Medium: <span style="color:red"> </span></h2>
+                <h2>Hard: <span style="color:green"> </span></h2>
+                <div class="timer">
+                    <h1>Time: </h1>
+                    <h2><span style="color:blue">0</span> seconds</h2>
+                </div>
             </div>
+
+            <table oncontextmenu="return false;" class="board-wrapper board" cellpadding="10">
+                <tbody></tbody>
+            </table>
+
         </div>
-
-        <table oncontextmenu="return false;" class="board-wrapper board" cellpadding="10">
-            <tbody></tbody>
-        </table>
-
     </div>
-
     <script src="js/game.js"></script>
 </body>
 

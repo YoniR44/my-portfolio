@@ -76,6 +76,10 @@ function onCloseModal() {
     $('.modal').hide()
 }
 
+function onCloseModal2() {
+    $('.newBook-modal').hide()
+}
+
 function updateRating(num) {
     var $modal = $('.modal');   
     var bookId = $modal.find('h6').text();

@@ -1,6 +1,19 @@
 body {
-    background-color: rgb(163, 119, 119);
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    background-image: url('img/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-container {
+    width: 95%;
+    height: auto;
+    background-color: rgb(146, 166, 197);
+    border-radius: 2rem;
 }
   
 body header {
@@ -16,6 +29,7 @@ body header {
 .board-container {
     text-align: center;
     vertical-align: center;
+    margin: 1rem;
 }
 
 .board-wrapper {
