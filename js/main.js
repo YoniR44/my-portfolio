@@ -7,7 +7,7 @@ function initPage() {
 
 function renderProjs() {
     var strHTML = gProjs.map(function(proj, index) {
-        return `<div class="col-md-4 col-sm-6 portfolio-item" onclick="renderProjModal('${proj.id}')">
+        return `<div data-aos="flip-right" data-aos-duration="1600" class="col-md-4 col-sm-6 portfolio-item" onclick="renderProjModal('${proj.id}')">
         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">

@@ -62,7 +62,7 @@ body {
 .offcanvas-btn {
     z-index: 100000;
     position: fixed;
-    top: 8%;
+    top: 10%;
     left: 3%;
     height: 50px;
     width: 50px;
