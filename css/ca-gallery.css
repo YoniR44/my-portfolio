@@ -56,9 +56,7 @@ img::selection {
 img::-moz-selection {
     background: transparent;
 }
-body {
-    -webkit-tap-highlight-color: #fed136;
-}
+
 .offcanvas-btn {
     z-index: 100000;
     position: fixed;
@@ -101,6 +99,14 @@ body {
     height: 20%;
 }
 
+#me>.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+#me>.row>.col-sm-4, .col-sm-8 {
+    padding-right: 0;
+}
+
 @media (min-width: 575px) {
     .offcanvas-btn-open {
         margin-left: 30vw;
@@ -118,10 +124,11 @@ body {
 #mainNav {
     background-color: #222222;
     z-index: 1000000;
+    width: 100vw;
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
-    right: 0;
+    right: 0px;
     padding: 13px;
     text-transform: uppercase;
     color: white;
@@ -129,6 +136,7 @@ body {
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
 }
 #mainNav .navbar-brand {
     color: #fed136;
@@ -140,6 +148,7 @@ body {
 #mainNav .navbar-brand:hover {
     color: #fec503;
 }
+
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
